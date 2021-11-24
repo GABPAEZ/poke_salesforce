@@ -1,0 +1,19 @@
+<template>
+    <h1>LWC POKEMON LIST</h1>
+    <template if:true={pokemonList}>
+        <template for:each={pokemonList.results} for:item='item' for:index='index'>              
+                <div key={item.name}>
+                    <h2>{item.name}</h2>
+                    <p>{item.url}</p>
+                    <p>{index}</p>  
+                    
+                </div>
+                </template>
+            </hr>
+            </template>
+    </template>
+</template>
+
+<!-- puedo agarrar y cortar https://pokeapi.co/api/v2/pokemon/1/ 
+-->
+
